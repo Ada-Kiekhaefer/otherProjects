@@ -1,0 +1,12 @@
+package ada.part1.fundamental;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("Hello!");
+		int myAge = 30;
+		int herAge = myAge;
+
+	}
+
+}

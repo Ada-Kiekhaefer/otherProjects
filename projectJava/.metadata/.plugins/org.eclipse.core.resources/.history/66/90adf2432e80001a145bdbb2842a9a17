@@ -1,0 +1,43 @@
+package ada.part1.fundamental;
+
+import java.util.Arrays;
+import java.util.Date;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("Hello!");
+//		primitive types
+		byte myAge = 30;
+		byte herAge = myAge;
+		int count = 5_000_000;
+		long viewsCount = 5_000_000_000L;
+		float price = 10.99F;
+		char letter = 'A';
+		boolean isEligible = false;
+
+//		reference type, allocate memory using "new" keyword 
+		Date now = new Date();
+		System.out.println(now);
+		
+//		string
+		String message = "Hello World!";
+		System.out.println(message.endsWith("!"));
+		System.out.println(message.length());
+		System.out.println(message.indexOf("H"));
+		System.out.println(message.replace("!", "?"));
+		System.out.println(message.toLowerCase());
+
+//		add special character e.g. "" and \
+		String message2 = "Hello \"Jack\"";
+		System.out.println(message2);
+		
+//		Array
+		int[] numbers = new int[5];
+		numbers[0] = 1;
+		numbers[1] = 2;	
+		
+		System.out.println(Arrays.toString(numbers));
+	}
+
+}

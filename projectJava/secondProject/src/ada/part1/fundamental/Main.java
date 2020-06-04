@@ -1,0 +1,74 @@
+package ada.part1.fundamental;
+
+import java.util.Arrays;
+import java.util.Date;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("Hello!");
+//		primitive types
+		byte myAge = 30;
+		byte herAge = myAge;
+		int count = 5_000_000;
+		long viewsCount = 5_000_000_000L;
+		float price = 10.99F;
+		char letter = 'A';
+		boolean isEligible = false;
+
+//		reference type, allocate memory using "new" keyword 
+		Date now = new Date();
+		System.out.println(now);
+		
+//		string
+		String message = "Hello World!";
+		System.out.println(message.endsWith("!"));
+		System.out.println(message.length());
+		System.out.println(message.indexOf("H"));
+		System.out.println(message.replace("!", "?"));
+		System.out.println(message.toLowerCase());
+
+//		add special character e.g. "" and \
+		String message2 = "Hello \"Jack\"";
+		System.out.println(message2);
+		
+//		Array
+//		int[] numbers = new int[5]; //older way
+//		numbers[0] = 1;  
+//		numbers[1] = 2;	
+		int[] numbers = {2, 3, 5, 1, 4};
+		Arrays.sort(numbers);	
+		System.out.println(Arrays.toString(numbers));
+		System.out.println(numbers.length);
+		
+//		multi-dimensional arrays
+//		int[][] numbers2D = new int[2][3];
+//		numbers2D[0][0] = 1;
+		int[][] numbers2D = { {1, 2, 3}, {4, 5, 6} };
+		System.out.println(Arrays.deepToString(numbers2D));
+		
+//		Constants
+		final float PI = 3.14F;
+
+//		
+		double result = (double)10 / (double)3;
+		System.out.println(result);
+		
+//		implicit casting
+		short x = 1;
+		int y = x + 2;
+		System.out.println(y);
+
+//		explicit casting
+		double a = 1.1;
+		int b = (int)a + 2;
+		System.out.println(b);
+		
+//		wrapper classes
+		String c = "1";
+		int d = Integer.parseInt(c) + 2;
+		System.out.println(d);
+		
+	}
+
+}
